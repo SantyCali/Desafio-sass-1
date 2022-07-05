@@ -1,0 +1,20 @@
+/* Barra de scroll */
+
+body{
+    background-color: #dc7b3b;
+}
+
+body::-webkit-scrollbar{
+    width: 14px;
+    background-color: rgb(253, 115, 23);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: bisque;
+    border-radius: 100px;
+    
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(247, 171, 80);
+}

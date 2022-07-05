@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&family=Open+Sans:ital,wght@1,600&family=Poppins:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+/* Components */
+header {
+  background-color: rgb(235, 94, 24);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  height: 12vh;
+  /* Imagen Logo */
+  /* Fin header */
+}
+header img {
+  width: 180px;
+  height: 180px;
+  padding: 25px;
+  display: flex;
+  margin-bottom: 5px;
+  transition: ease-in 0.25s;
+}
+header img:hover {
+  width: 190px;
+  height: 190px;
+  transition: all 0.25s;
+}
+header a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 14px;
+  font-size: 1.7rem;
+  transition: all 0.25s;
+}
+header ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  transition: ease-in 0.2s;
+  border-radius: 14px;
+}
+header nav ul li {
+  display: inline-flex;
+  padding: 5px;
+}
+
+/* Barra de scroll */
+body {
+  background-color: #dc7b3b;
+}
+
+body::-webkit-scrollbar {
+  width: 14px;
+  background-color: rgb(253, 115, 23);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: bisque;
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(247, 171, 80);
+}
+
+/* ------SECTION 1----- */
+.carousel img {
+  border-radius: 14px;
+}
+
+/* ------------  Servicios --------------- */
+section .section-servicios-1 {
+  display: grid;
+  height: 500px;
+  margin-top: 50px;
+  background-color: rgb(236, 144, 68);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /* Fin de section 1 */
+}
+section .section-servicios-1.section-servicios-1 .mercado-pago {
+  grid-column: 2;
+  grid-row: 2;
+}
+section .section-servicios-1.section-servicios-1 .mercado-pago img {
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+section .section-servicios-1.section-servicios-1 .p-mercado-pago {
+  grid-column: 4/8;
+  grid-row: 2;
+  margin-top: 130px;
+}
+section .section-servicios-1.section-servicios-1 .p-mercado-pago p {
+  font-size: 3rem;
+  font-family: sans-serif;
+  background-color: white;
+  border-radius: 10px;
+  transition: ease-in 0.25s;
+}
+section .section-servicios-1.section-servicios-1 .p-mercado-pago p:hover {
+  background-color: rgb(183, 183, 183);
+  transition: all 0.2s;
+}
+@media screen and (max-width: 978px) {
+  section .section-servicios-1.section-servicios-1 {
+    height: 150vh;
+  }
+  section .section-servicios-1.section-servicios-1 .mercado-pago {
+    grid-column: 4;
+    margin-top: 10px;
+  }
+  section .section-servicios-1.section-servicios-1 .p-mercado-pago {
+    grid-column: 4;
+    grid-row: 3;
+  }
+}
+@media screen and (max-width: 376px) {
+  section .section-servicios-1.section-servicios-1 .mercado-pago img {
+    object-fit: cover;
+    width: 280px;
+    height: 280px;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 481px) {
+  section .section-servicios-1.section-servicios-1 .mercado-pago img {
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+  }
+}
+
+/* --- SECTION SERVICIOS 2 --- */
+.section-servicios-2 {
+  display: grid;
+  height: 70vh;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  background-color: rgb(236, 144, 68);
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  /* CLARO */
+  /* MOVISTAR */
+  /* PERSONAL */
+}
+.section-servicios-2 .parrafo-recargas {
+  grid-column: 4/7;
+  grid-row: 2;
+}
+.section-servicios-2 .parrafo-recargas p {
+  font-size: 3rem;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: white;
+  border-radius: 10px;
+  transition: ease-in 0.25s;
+}
+.section-servicios-2 .parrafo-recargas p:hover {
+  background-color: rgb(195, 191, 191);
+  transition: all 0.2s;
+}
+.section-servicios-2 .claro {
+  grid-column: 1;
+  grid-row: 5;
+}
+.section-servicios-2 .claro img {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+}
+.section-servicios-2 .movistar {
+  grid-column: 4;
+  grid-row: 5;
+}
+.section-servicios-2 .movistar img {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+}
+.section-servicios-2 .personal {
+  grid-column: 7;
+  grid-row: 5;
+}
+.section-servicios-2 .personal img {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+}
+@media screen and (max-width: 978px) {
+  .section-servicios-2 {
+    height: 200vh;
+  }
+  .section-servicios-2 .parrafo-recargas {
+    grid-column: 3/7;
+    grid-row: 1;
+  }
+  .section-servicios-2 .claro {
+    grid-column: 4;
+    grid-row: 2;
+  }
+  .section-servicios-2 .movistar {
+    grid-row: 4;
+  }
+  .section-servicios-2 .personal {
+    grid-column: 4;
+    grid-row: 6;
+  }
+}
+
+/* ------------ Fin de Servicios --------- */
+/* Footer */
+footer {
+  background-color: rgb(235, 94, 24);
+  height: auto;
+  width: 99vw;
+  font-family: sans-serif;
+  padding-top: 40px;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: white;
+}
+
+.socials a i {
+  font-size: 2rem;
+  transition: color 0.4s ease;
+}
+
+.socials a:hover i {
+  color: aqua;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

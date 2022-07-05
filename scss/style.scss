@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+
+
+@import './fonts';
+@import './variables';
+
+/* Components */
+@import './component/header';
+@import './component/scrollbar';
+@import './component/carousel';
+@import './component/section1mp';
+@import './component/section2mp';
+@import './component/footer';
+
+
+p{
+    font-family: $main-fonts;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

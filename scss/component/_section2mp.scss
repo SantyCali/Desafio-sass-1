@@ -1,0 +1,110 @@
+/* --- SECTION SERVICIOS 2 --- */
+
+.section-servicios-2 {
+    display: grid;
+    height: 70vh;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    background-color: rgb(236, 144, 68);
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows:repeat(10,1fr);
+
+
+
+& .parrafo-recargas{
+    grid-column: 4 / 7;
+    grid-row: 2;
+
+}
+
+& .parrafo-recargas p{
+    font-size: 3rem;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: white;
+    border-radius: 10px;
+    transition: ease-in 0.25s;
+
+
+&:hover{
+    background-color: rgb(195, 191, 191);
+    transition: all 0.2s;
+}
+
+}
+
+/* CLARO */
+& .claro {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+
+& .claro img{
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+}
+
+
+/* MOVISTAR */
+
+& .movistar{
+    grid-column: 4;
+    grid-row: 5;
+}
+
+
+& .movistar img{
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+}
+
+/* PERSONAL */
+
+& .personal{
+    grid-column: 7;
+    grid-row: 5;
+}
+
+
+& .personal img{
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+}
+
+
+
+@media screen and (max-width: 978px){
+    & {
+        height: 200vh;
+    }
+
+
+    & .parrafo-recargas{
+        grid-column: 3 / 7;
+        grid-row: 1;
+    
+    }
+
+    & .claro{
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    & .movistar{
+        grid-row: 4;
+    }
+    
+    & .personal{
+        grid-column: 4;
+        grid-row: 6;
+    }
+}
+
+
+}
+
+/* ------------ Fin de Servicios --------- */
