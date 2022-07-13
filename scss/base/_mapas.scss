@@ -1,0 +1,41 @@
+$header:(
+    bg-header: rgb(235, 94, 24),
+    display-header: flex,
+    flex-direction-header: row,
+    justify-content-header: space-between,
+    padding-header: 10px,
+    align-items-header: center,
+    height-header: 12vh,
+);
+
+
+
+$footer: (
+    bg-footer: rgb(235, 94, 24),
+    height-footer: auto,
+    width-footer: 99vw,
+    font-family-footer: sans-serif,
+    padding-top-footer: 40px,
+    color-footer: white,
+);
+
+
+
+header{
+    background-color: map-get($header, bg-header,);
+    display: map-get($header, display-header );
+    flex-direction: map-get($header, justify-content-header);
+    padding: map-get($header, padding-header);
+    align-items: map-get($header, align-items-header);
+    height: map-get($header, height-header );
+}
+
+footer{
+    background-color: map-get($footer, bg-footer);
+    height: map-get($footer, height-footer );
+    width: map-get($footer, width-footer );
+    font-family: map-get($footer, font-family-footer);
+    padding: map-get($footer, padding-top-footer );
+    color: map-get($footer, color-footer );
+
+}

@@ -1,0 +1,27 @@
+$color-primario: rgb(236, 144, 68);
+$color-secundario: rgb(228, 18, 18);
+$color-terciario: white;
+
+
+
+section .section-servicios-1 {
+    background-color: ($color-primario);
+}
+
+section .section-servicios-1.section-servicios-1 .p-mercado-pago p{
+    background-color: $color-terciario;
+
+    &:hover{
+        background-color: darken($color-terciario, 30%);
+        transition: all 0.2s;
+    }
+}
+
+
+section .section-servicios-2 {
+    background-color: mix($color-primario, $color-terciario);
+}
+
+section .section-servicios-2 .parrafo-recargas p{
+    color: saturate($color-secundario, 7%);
+}

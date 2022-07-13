@@ -76,6 +76,10 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 14px;
 }
 
+.carousel {
+  margin-bottom: 100px;
+}
+
 /* ------------  Servicios --------------- */
 section .section-servicios-1 {
   display: grid;
@@ -100,14 +104,14 @@ section .section-servicios-1.section-servicios-1 .p-mercado-pago {
   grid-row: 2;
   margin-top: 130px;
 }
-section .section-servicios-1.section-servicios-1 .p-mercado-pago p {
+section .section-servicios-1.section-servicios-1 .p-mercado-pago h1 {
   font-size: 3rem;
   font-family: sans-serif;
   background-color: white;
   border-radius: 10px;
   transition: ease-in 0.25s;
 }
-section .section-servicios-1.section-servicios-1 .p-mercado-pago p:hover {
+section .section-servicios-1.section-servicios-1 .p-mercado-pago h1:hover {
   background-color: rgb(183, 183, 183);
   transition: all 0.2s;
 }
@@ -277,8 +281,69 @@ footer {
   color: aqua;
 }
 
+/* Bases */
+header {
+  background-color: rgb(235, 94, 24);
+  display: flex;
+  flex-direction: space-between;
+  padding: 10px;
+  align-items: center;
+  height: 12vh;
+}
+
+footer {
+  background-color: rgb(235, 94, 24);
+  height: auto;
+  width: 99vw;
+  font-family: sans-serif;
+  padding: 40px;
+  color: white;
+}
+
+section .section-servicios-1 {
+  background-color: rgb(236, 144, 68);
+}
+
+section .section-servicios-1.section-servicios-1 .p-mercado-pago p {
+  background-color: white;
+}
+section .section-servicios-1.section-servicios-1 .p-mercado-pago p:hover {
+  background-color: #b3b3b3;
+  transition: all 0.2s;
+}
+
+section .section-servicios-2 {
+  background-color: #f6c8a2;
+}
+
+section .section-servicios-2 .parrafo-recargas p {
+  color: #ed0909;
+}
+
+/* Barra de scroll */
+body::-webkit-scrollbar {
+  width: 14px;
+  background-color: rgb(253, 115, 23);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: bisque;
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(247, 171, 80);
+}
+
 p {
   font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  background-color: white;
+  border-radius: 14px;
+  font-family: sans-serif;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

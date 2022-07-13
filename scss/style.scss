@@ -19,12 +19,21 @@
 @import './component/section2mp';
 @import './component/footer';
 
+/* Bases */
+@import './base/mapas';
+@import './base/colores';
+@import './base/extends';
 
 p{
     font-family: $main-fonts;
 }
 
-
+h1{
+    background-color: white;
+    border-radius: 14px;
+    font-family: sans-serif;
+    text-align: center;
+}
 
 
 
